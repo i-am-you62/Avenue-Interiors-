@@ -1,0 +1,164 @@
+/* Tablet and smaller desktops */
+@media only screen and (max-width: 1150px) {
+  .img-ctn {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+/* Tablet / Portrait */
+@media only screen and (max-width: 900px) {
+
+  /* Header adjustments */
+  header {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 5rem;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .content-ctn {
+    margin: 2rem 0;
+    margin-left: 0;
+  }
+
+  .header-img {
+    margin: 2rem auto;
+  }
+
+  /* Popularity Section */
+  .popularity {
+    margin-top: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .popularity div {
+    margin-right: 0;
+    margin: 0 2rem;
+  }
+
+  /* Feature Section adjustments */
+  .features {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .features .img-ctn {
+    margin-bottom: 3rem;
+  }
+
+  /* Footer adjustments */
+  footer {
+    height: auto;
+    padding: 3rem 1rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .about {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  /* Typography Scale */
+  .main-head {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .primary-head {
+    width: 100%;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+  }
+
+  /* Header Image */
+  .header-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .header-img img {
+    width: 250px;
+    height: 300px;
+    margin-left: 10px;
+  }
+
+  /* Why Choose Us Section */
+  .why {
+    margin-top: 5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why .img-ctn {
+    margin-bottom: 2rem;
+  }
+
+  /* Cards Grid */
+  .cards {
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .card {
+    margin: 1rem 0;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .card.card-fill {
+    /* Resetting specific margin from previous bad code if any, keeping it clean */
+    margin-left: 0;
+  }
+
+  /* Popularity Stacking */
+  .popularity {
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+  }
+
+  .popularity div {
+    margin: 0;
+  }
+
+  .popularity div h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Footer */
+  .about {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about div {
+    margin-right: 0;
+  }
+
+  footer .logo-ctn h1 {
+    font-size: 3rem;
+  }
+}
